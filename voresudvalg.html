@@ -18,5 +18,376 @@
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/voresudvalg.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- NAVIGATION
+         Row 1: search | LOGO | account + cart + CTA
+         Row 2: page links (desktop only) -->
+    <header>
+      <nav class="site-nav">
+        <!-- Row 1 -->
+        <div class="nav-row-1">
+          <div class="nav-row-1-left">
+            <button class="icon-btn" aria-label="Søg">
+              <img src="images/img_index/search_icon.svg" alt="" />
+            </button>
+          </div>
+
+          <a href="index.html" class="nav-logo">Frihedens Blomster</a>
+
+          <div class="nav-row-1-right">
+            <button class="icon-btn" aria-label="Min konto">
+              <img src="images/img_index/profile.svg" alt="" />
+            </button>
+            <button class="icon-btn" aria-label="Kurv">
+              <img src="images/img_index/kurv.svg" alt="" />
+            </button>
+            <a href="kontakt.html" class="btn-lime nav-cta">Bestil nu →</a>
+            <button class="nav-hamburger" aria-label="Åbn menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Row 2: page links (desktop only) -->
+        <div class="nav-row-2">
+          <div class="nav-row-2-inner">
+            <ul class="nav-links">
+              <li><a href="index.html" class="active">Forsiden</a></li>
+              <li><a href="voresudvalg.html">Vores udvalg</a></li>
+              <li><a href="galleri.html">Galleri / Inspiration</a></li>
+              <li><a href="om-os.html">Om os</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <a href="https://interflora.dk" target="_blank" rel="noopener" class="nav-interflora">Interflora</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MOBILE NAVIGATION OVERLAY -->
+    <div class="mobile-nav">
+      <button class="mobile-nav-close" aria-label="Luk menu">&times;</button>
+      <ul>
+        <li><a href="index.html">Forsiden</a></li>
+        <li><a href="voresudvalg.html">Vores udvalg</a></li>
+        <li><a href="galleri.html">Galleri / Inspiration</a></li>
+        <li><a href="om-os.html">Om os</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a href="kontakt.html" class="btn-lime mobile-nav-cta-btn">Bestil nu →</a>
+    </div>
+
+    <!-- TICKER STRIP  (lime background, scrolling text) -->
+    <div class="ticker-strip" aria-hidden="true">
+      <div class="ticker-inner">
+        <span>Levering samme dag</span>
+        <span class="ticker-dot"> · </span>
+        <span>Bundet for hånd</span>
+        <span class="ticker-dot"> · </span>
+        <span>Fri levering over 500 kr.</span>
+        <span class="ticker-dot"> · </span>
+        <span>Interflora-partner</span>
+        <span class="ticker-dot"> · </span>
+        <span>Aktuelle · Sommer 2026</span>
+        <span class="ticker-dot"> · </span>
+        <!-- Duplicate set for seamless loop -->
+        <span>Levering samme dag</span>
+        <span class="ticker-dot"> · </span>
+        <span>Bundet for hånd</span>
+        <span class="ticker-dot"> · </span>
+        <span>Fri levering over 500 kr.</span>
+        <span class="ticker-dot"> · </span>
+        <span>Interflora-partner</span>
+        <span class="ticker-dot"> · </span>
+        <span>Aktuelle · Sommer 2026</span>
+        <span class="ticker-dot"> · </span>
+      </div>
+    </div>
+
+    <!-- PAGE -->
+    <main class="page">
+      <!-- INTRO -->
+      <section class="intro">
+        <p class="eyebrow">FRISKE VARER DAGLIGT</p>
+
+        <h1>VORES UDVALG</h1>
+
+        <p class="intro-text">Find den perfekte buket til enhver anledning. Vi leverer hurtigt og med kærlighed.</p>
+      </section>
+
+      <!-- FILTER BAR -->
+      <section class="toolbar">
+        <div class="toolbar-left">
+          <button class="filter-btn">☰ FILTER</button>
+          <button class="sort-btn">↕ SORTER</button>
+        </div>
+
+        <div class="toolbar-right"></div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section class="products">
+        <!-- CARD -->
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"></div>
+
+          <div class="product-info">
+            <h3>PRODUKTNAVN</h3>
+
+            <p class="description">Smuk buket</p>
+
+            <p class="price">349,00 kr.</p>
+
+            <button>LÆG I KURV</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- PAGINATION -->
+      <div class="pagination-placeholder"></div>
+
+      <!-- BENEFITS -->
+      <section class="benefits">
+        <div class="benefit">
+          <h4>SAMME DAG</h4>
+          <p>Icon</p>
+        </div>
+
+        <div class="benefit">
+          <h4>FRI FRAGT</h4>
+          <p>Icon</p>
+        </div>
+
+        <div class="benefit">
+          <h4>INTERFLORA</h4>
+          <p>Icon</p>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="help-section">
+        <h2>BRUG FOR HJÆLP?</h2>
+
+        <p>Vi sidder klar til at hjælpe dig.</p>
+
+        <button>CTA</button>
+      </section>
+
+      <!-- FLOATING CTA -->
+      <button class="floating-cta">
+        scroll op<br />
+        cta
+      </button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <p class="footer-logo">Frihedens Blomster</p>
+          <p class="footer-tagline">Lokal blomsterbutik siden 1987. Faglærte hænder, friske blomster og levering, der faktisk virker.</p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <img src="images/img_index/instagram_icon.svg" alt="Instagram" />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <img src="images/img_index/fb_icon.svg" alt="Facebook" />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <img src="images/img_index/linkedin_icon.svg" alt="LinkedIn" />
+            </a>
+          </div>
+
+          <span class="footer-badge">Interflora-partner · Global levering</span>
+        </div>
+
+        <!-- Accordion columns -->
+        <div class="footer-col">
+          <button class="footer-col-btn">
+            <span>Butikken</span>
+            <span class="arrow">+</span>
+          </button>
+          <div class="footer-col-links">
+            <ul>
+              <li><a href="#">Buketter</a></li>
+              <li><a href="#">Bryllup</a></li>
+              <li><a href="#">Sorg</a></li>
+              <li><a href="#">Planter</a></li>
+              <li><a href="#">Gavekort</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <button class="footer-col-btn">
+            <span>Information</span>
+            <span class="arrow">+</span>
+          </button>
+          <div class="footer-col-links">
+            <ul>
+              <li><a href="om-os.html">Om os</a></li>
+              <li><a href="#">Levering</a></li>
+              <li><a href="https://interflora.dk" target="_blank" rel="noopener">Interflora</a></li>
+              <li><a href="#">Handelsbetingelser</a></li>
+              <li><a href="#">Privatlivspolitik</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <button class="footer-col-btn">
+            <span>Kontakt</span>
+            <span class="arrow">+</span>
+          </button>
+          <div class="footer-col-links">
+            <ul>
+              <li><a href="tel:+4536751234">36 75 12 34</a></li>
+              <li><a href="mailto:blomster@frihedens.dk">blomster@frihedens.dk</a></li>
+              <li><a href="#">Hvidovre Strandvej 12</a></li>
+              <li><a href="#">2650 Hvidovre</a></li>
+              <li><a href="#">Man–lør 9–18</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom: payment icons (left) + copyright (right) -->
+      <div class="footer-bottom">
+        <ul class="footer-payment" aria-label="Betalingsmetoder">
+          <li><img src="images/img_index/visa_icon.svg" alt="Visa" /></li>
+          <li><img src="images/img_index/mastercard_icon.svg" alt="Mastercard" /></li>
+          <li><img src="images/img_index/maestro_icon.svg" alt="Maestro" /></li>
+          <li><img src="images/img_index/mobilepay_icon.svg" alt="MobilePay" /></li>
+          <li><img src="images/img_index/applepay_icon.svg" alt="Apple Pay" /></li>
+          <li><img src="images/img_index/googlepay_icon.svg" alt="Google Pay" /></li>
+        </ul>
+
+        <p class="footer-copyright">© 2026 Frihedens Blomster</p>
+      </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA  (hidden on desktop) -->
+    <div class="sticky-cta">
+      <a href="#kategorier">Vis alle buketter →</a>
+    </div>
+
+    <!-- JavaScript — at the bottom so the page loads first -->
+    <script src="javascript/main.js"></script>
+  </body>
 </html>
