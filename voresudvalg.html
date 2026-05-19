@@ -1,9 +1,67 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vores udvalg</title>
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="Frihedens Blomster — lokal blomsterbutik i Hvidovre. Håndlavede buketter, levering samme dag." />
+    <title>Frihedens Blomster</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheets (order matters — general first, then layout, then page) -->
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body></body>
+  <body>
+    <!--  NAVIGATIONRow 1: search | LOGO | account + cart + CTA
+         Row 2: page links (desktop only) -->
+    <header>
+      <nav class="site-nav">
+        <!-- Row 1 -->
+        <div class="nav-row-1">
+          <div class="nav-row-1-left">
+            <button class="icon-btn" aria-label="Søg">
+              <img src="images/img_index/search_icon.svg" alt="" />
+            </button>
+          </div>
+
+          <a href="index.html" class="nav-logo">Frihedens Blomster</a>
+
+          <div class="nav-row-1-right">
+            <button class="icon-btn" aria-label="Min konto">
+              <img src="images/img_index/profile.svg" alt="" />
+            </button>
+            <button class="icon-btn" aria-label="Kurv">
+              <img src="images/img_index/kurv.svg" alt="" />
+            </button>
+            <a href="kontakt.html" class="btn-lime nav-cta">Bestil nu →</a>
+            <button class="nav-hamburger" aria-label="Åbn menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Row 2: page links (desktop only) -->
+        <div class="nav-row-2">
+          <div class="nav-row-2-inner">
+            <ul class="nav-links">
+              <li><a href="index.html" class="active">Forsiden</a></li>
+              <li><a href="vores-udvalg.html">Vores udvalg</a></li>
+              <li><a href="galleri.html">Galleri / Inspiration</a></li>
+              <li><a href="om-os.html">Om os</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <a href="https://interflora.dk" target="_blank" rel="noopener" class="nav-interflora">Interflora</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
