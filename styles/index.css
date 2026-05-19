@@ -1,0 +1,614 @@
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* square-ish on mobile */
+  min-height: 300px;
+  overflow: hidden;
+  background-color: #7fa8b0; /* fallback colour while image loads */
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Dark gradient so text is always readable */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, rgba(10, 30, 34, 0.7) 0%, rgba(10, 30, 34, 0.2) 50%, transparent 70%);
+}
+
+/* Text sits at the bottom-left */
+.hero-content {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(225, 254, 8, 0.75);
+  margin-bottom: 10px;
+}
+
+.hero-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(36px, 9vw, 96px);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.92;
+  color: var(--color-lime);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* Season badge — small outlined pill in the hero */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(249, 247, 242, 0.75);
+  border: 1px solid rgba(249, 247, 242, 0.3);
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+/* -----------------------------------------------
+   CATEGORIES SECTION
+   "Shop efter stemning / kategorier"
+   Card = top image area (icon centred) + bottom text area
+----------------------------------------------- */
+.categories {
+  padding: 36px 16px 0;
+}
+
+/* 2 columns on mobile */
+.cat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* Card wrapper — border, rounded, column layout */
+.cat-card {
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top area — cream background, icon centred */
+.cat-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background-color: var(--color-cream);
+  flex: 1; /* expands so all cards have equal image areas */
+}
+
+/* The icon circle — pale blue background, dark icon inside, centred */
+.cat-icon {
+  width: 72px;
+  height: 72px;
+  background-color: var(--color-blue-pale);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Bottom text area — separator line on top, left-aligned content */
+.cat-card-body {
+  padding: 14px 16px 16px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cat-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+}
+
+.cat-description {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+/* "Se udvalget →" — lime pill, full width */
+.cat-btn {
+  display: block;
+  background-color: var(--color-lime);
+  color: var(--color-dark);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 100px;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.cat-btn:hover {
+  opacity: 0.85;
+}
+
+/* -----------------------------------------------
+   PRODUCTS SECTION
+   "Populære buketter"
+----------------------------------------------- */
+.products {
+  padding: 40px 16px 0;
+}
+
+/* --- Mobile: simple list rows --- */
+.products-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.product-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: var(--color-blue-pale);
+  position: relative;
+}
+
+.product-thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 3px;
+}
+
+.product-price {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.product-row .btn-lime {
+  font-size: 12px;
+  padding: 9px 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* --- Desktop: card grid (hidden on mobile) --- */
+.products-grid {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.product-card {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--color-cream);
+}
+
+.product-card-photo {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background-color: var(--color-blue-pale);
+  overflow: hidden;
+}
+
+.product-card-photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-card-photo img {
+  transform: scale(1.04);
+}
+
+/* Heart/wishlist button on photo */
+.product-wish {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-lime);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.product-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-card-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.product-card-cat {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.product-card-price {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  color: var(--color-text);
+}
+
+/* Full-width lime button at bottom of card */
+.product-card-btn {
+  display: block;
+  background-color: var(--color-lime);
+  color: var(--color-dark);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 11px;
+  border-radius: 6px;
+  margin-top: 12px;
+  transition: opacity 0.2s;
+}
+
+.product-card-btn:hover {
+  opacity: 0.85;
+}
+
+/* -----------------------------------------------
+   ILLUSTRATION BLOCK
+   Small illustration on the left, text on the right
+----------------------------------------------- */
+.illo-block {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 16px 0;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Illustration side */
+.illo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  background-color: var(--color-cream);
+}
+
+.illo-image img {
+  max-width: 220px;
+  width: 100%;
+}
+
+/* Text side */
+.illo-text {
+  padding: 24px 24px 32px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.illo-eyebrow {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+}
+
+.illo-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(26px, 5vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--color-dark);
+}
+
+.illo-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* -----------------------------------------------
+   GALLERY SECTION (home preview)
+----------------------------------------------- */
+.gallery-home {
+  padding: 40px 16px 0;
+}
+
+/* 1 column on mobile */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.gallery-cell {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-blue-pale);
+}
+
+.gallery-cell img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-cell:hover img {
+  transform: scale(1.04);
+}
+
+/* Label badge in the corner */
+.gallery-label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background-color: rgba(10, 30, 34, 0.55);
+  color: var(--color-cream);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Centred button below gallery */
+.gallery-cta {
+  text-align: center;
+  padding: 24px 0 0;
+}
+
+/* -----------------------------------------------
+   USP ROW
+   Three icons with labels
+----------------------------------------------- */
+.usp-row {
+  display: flex;
+  margin: 40px 16px 0;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.usp-cell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 10px;
+  border-right: 1px solid var(--color-border);
+  gap: 8px;
+}
+
+.usp-cell:last-child {
+  border-right: none;
+}
+
+.usp-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.usp-icon img {
+  width: 44px;
+  height: 44px;
+}
+
+.usp-label {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-dark);
+  line-height: 1.2;
+}
+
+.usp-sublabel {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-top: -4px;
+}
+
+/* -----------------------------------------------
+   DESKTOP STYLES  (min-width: 768px)
+----------------------------------------------- */
+@media (min-width: 768px) {
+  /* Hero */
+  .hero {
+    aspect-ratio: 16 / 7;
+    min-height: 400px;
+  }
+
+  .hero-content {
+    bottom: 48px;
+    left: 40px;
+  }
+
+  .hero-breadcrumb {
+    top: 20px;
+    left: 40px;
+  }
+
+  /* Categories: 4 columns */
+  .categories {
+    padding: 48px 32px 0;
+  }
+
+  .cat-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  /* Products */
+  .products {
+    padding: 56px 32px 0;
+  }
+
+  .products-list {
+    display: none; /* hide list on desktop */
+  }
+
+  .products-grid {
+    display: grid; /* show card grid on desktop */
+  }
+
+  /* Illo block */
+  .illo-block {
+    flex-direction: row;
+    margin: 56px 32px 0;
+    min-height: 320px;
+  }
+
+  .illo-image {
+    width: 40%;
+    flex-shrink: 0;
+    border-right: 1px solid var(--color-border);
+    border-top: none;
+  }
+
+  .illo-text {
+    border-top: none;
+    padding: 48px 40px;
+    justify-content: center;
+  }
+
+  /* Gallery: 3 columns */
+  .gallery-home {
+    padding: 56px 32px 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-cell {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* USP */
+  .usp-row {
+    margin: 56px 32px 0;
+  }
+
+  .usp-cell {
+    padding: 32px 20px;
+  }
+
+  .usp-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .usp-icon img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .usp-label {
+    font-size: 14px;
+  }
+
+  .usp-sublabel {
+    font-size: 12px;
+  }
+}
