@@ -9,7 +9,7 @@
   --color-teal: #005056; /* darker teal for hover */
   --color-lime: #e1fe08; /* lime / accent */
   --color-blue: #97b9ff; /* periwinkle — active underline, Interflora btn */
-  --color-blue-pale: #cddaff; /* pale blue for category icon circles */
+  --color-blue-pale: rgba(205, 218, 255, 100); /* pale blue for category icon circles */
   --color-cream: #f9f7f2; /* page background */
   --color-text: rgba(23, 53, 60, 0.75);
   --color-text-muted: rgba(23, 53, 60, 0.5);

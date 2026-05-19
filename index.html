@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <!--  NAVIGATIONRow 1: search | LOGO | account + cart + CTA
+    <!-- NAVIGATION
+         Row 1: search | LOGO | account + cart + CTA
          Row 2: page links (desktop only) -->
     <header>
       <nav class="site-nav">
@@ -68,7 +69,8 @@
     <div class="mobile-nav">
       <button class="mobile-nav-close" aria-label="Luk menu">&times;</button>
       <ul>
-        <li><a href="index.html">Vores udvalg</a></li>
+        <li><a href="index.html">Forsiden</a></li>
+        <li><a href="vores-udvalg.html">Vores udvalg</a></li>
         <li><a href="galleri.html">Galleri / Inspiration</a></li>
         <li><a href="om-os.html">Om os</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -76,7 +78,7 @@
       <a href="kontakt.html" class="btn-lime mobile-nav-cta-btn">Bestil nu →</a>
     </div>
 
-    <!-- TICKER STRIP  (lime background, scrolling text) -->
+    <!-- TICKER STRIP (lime background, scrolling text) -->
     <div class="ticker-strip" aria-hidden="true">
       <div class="ticker-inner">
         <span>Levering samme dag</span>
@@ -109,8 +111,12 @@
 
       <div class="hero-overlay"></div>
 
+      <!-- .hero-badge is a direct child of .hero
+           so position: absolute measures from the hero's top-left corner -->
+      <p class="hero-badge">✦ Aktuelle · Sommer 2026</p>
+
+      <!-- Eyebrow, heading and CTA are anchored to the bottom-left -->
       <div class="hero-content">
-        <p class="hero-badge">✦ Aktuelle · Sommer 2026</p>
         <p class="hero-eyebrow">Friske blomster · Hvidovre og omegn · Levering samme dag</p>
         <h1 class="hero-heading">
           Der behøver<br />
@@ -121,7 +127,7 @@
       </div>
     </section>
 
-    <!-- CATEGORIES  — "Shop efter stemning / kategorier" -->
+    <!-- CATEGORIES — "Shop efter stemning / kategorier" -->
     <section class="categories" id="kategorier">
       <div class="section-head">
         <h2>Shop efter stemning / kategorier</h2>
@@ -131,7 +137,7 @@
         <div class="cat-card">
           <div class="cat-card-image">
             <div class="cat-icon">
-              <img src="images/img_index/cat_buketter.svg" alt="" />
+              <img src="images/img_index/buket_icon.svg" alt="" />
             </div>
           </div>
           <div class="cat-card-body">
@@ -144,7 +150,7 @@
         <div class="cat-card">
           <div class="cat-card-image">
             <div class="cat-icon">
-              <img src="images/img_index/cat_sorg.svg" alt="" />
+              <img src="images/img_index/begravelse_icon.svg" alt="" />
             </div>
           </div>
           <div class="cat-card-body">
@@ -157,7 +163,7 @@
         <div class="cat-card">
           <div class="cat-card-image">
             <div class="cat-icon">
-              <img src="images/img_index/cat_gaver.svg" alt="" />
+              <img src="images/img_index/gaver_icon.svg" alt="" />
             </div>
           </div>
           <div class="cat-card-body">
@@ -170,7 +176,7 @@
         <div class="cat-card">
           <div class="cat-card-image">
             <div class="cat-icon">
-              <img src="images/img_index/cat_interflora.svg" alt="" />
+              <img src="images/img_index/interflora_globe_icon.svg" alt="" />
             </div>
           </div>
           <div class="cat-card-body">
@@ -182,7 +188,7 @@
       </div>
     </section>
 
-    <!-- PRODUCTS  — "Populære buketter"
+    <!-- PRODUCTS — "Populære buketter"
          Mobile: list rows / Desktop: card grid -->
     <section class="products">
       <div class="section-head">
@@ -190,7 +196,7 @@
         <a href="galleri.html">Se alle buketter →</a>
       </div>
 
-      <!-- Mobile list -->
+      <!-- Mobile list (hidden on desktop via CSS) -->
       <div class="products-list">
         <div class="product-row">
           <div class="product-thumb">
@@ -226,7 +232,7 @@
         </div>
       </div>
 
-      <!-- Desktop card grid -->
+      <!-- Desktop card grid (hidden on mobile via CSS) -->
       <div class="products-grid">
         <article class="product-card">
           <div class="product-card-photo">
@@ -311,7 +317,7 @@
       </div>
     </section>
 
-    <!-- USP ROW  — three key promises -->
+    <!-- USP ROW — three key promises -->
     <section class="usp-row" aria-label="Vores løfter">
       <div class="usp-cell">
         <div class="usp-icon">
@@ -361,7 +367,7 @@
           <span class="footer-badge">Interflora-partner · Global levering</span>
         </div>
 
-        <!-- Accordion columns -->
+        <!-- Accordion columns (mobile) / always expanded (desktop) -->
         <div class="footer-col">
           <button class="footer-col-btn">
             <span>Butikken</span>
@@ -426,12 +432,12 @@
       </div>
     </footer>
 
-    <!-- STICKY MOBILE CTA  (hidden on desktop) -->
+    <!-- STICKY MOBILE CTA (hidden on desktop) -->
     <div class="sticky-cta">
       <a href="#kategorier">Vis alle buketter →</a>
     </div>
 
-    <!-- JavaScript — at the bottom so the page loads first -->
+    <!-- JavaScript — loaded at the end so the HTML is ready first -->
     <script src="javascript/main.js"></script>
   </body>
 </html>
