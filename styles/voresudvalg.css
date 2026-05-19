@@ -16,6 +16,10 @@ body {
   display: none;
 }
 
+.nav-logo {
+  padding-left: 130px;
+}
+
 /* PAGE */
 .page {
   padding: 2rem;
