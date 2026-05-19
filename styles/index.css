@@ -59,6 +59,11 @@
 
 /* Season badge — small outlined pill in the hero */
 .hero-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -67,11 +72,10 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(249, 247, 242, 0.75);
-  border: 1px solid rgba(249, 247, 242, 0.3);
+  color: rgba(225, 254, 8, 0.75);
+  border: 1px solid rgba(225, 254, 8, 0.75);
   padding: 5px 12px;
   border-radius: 4px;
-  margin-bottom: 14px;
 }
 
 /* -----------------------------------------------

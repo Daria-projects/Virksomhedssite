@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <!--  NAVIGATIONRow 1: search | LOGO | account + cart + CTA
+    <!-- NAVIGATION
+         Row 1: search | LOGO | account + cart + CTA
          Row 2: page links (desktop only) -->
     <header>
       <nav class="site-nav">
@@ -68,7 +69,8 @@
     <div class="mobile-nav">
       <button class="mobile-nav-close" aria-label="Luk menu">&times;</button>
       <ul>
-        <li><a href="index.html">Vores udvalg</a></li>
+        <li><a href="index.html">Forsiden</a></li>
+        <li><a href="voresudvalg.html">Vores udvalg</a></li>
         <li><a href="galleri.html">Galleri / Inspiration</a></li>
         <li><a href="om-os.html">Om os</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -107,10 +109,15 @@
     <section class="hero">
       <img class="hero-image" src="images/img_index/Hero Section.webp" alt="Friske peach roser i vand mod lyseblå baggrund" fetchpriority="high" />
 
+      <!-- Dark gradient overlay -->
       <div class="hero-overlay"></div>
 
+      <!-- Badge is a direct child of .hero so position: absolute
+           measures from the hero's top-left corner -->
+      <p class="hero-badge">✦ Aktuelle · Sommer 2026</p>
+
+      <!-- Eyebrow, heading and CTA sit at the bottom-left -->
       <div class="hero-content">
-        <p class="hero-badge">✦ Aktuelle · Sommer 2026</p>
         <p class="hero-eyebrow">Friske blomster · Hvidovre og omegn · Levering samme dag</p>
         <h1 class="hero-heading">
           Der behøver<br />
@@ -190,7 +197,7 @@
         <a href="galleri.html">Se alle buketter →</a>
       </div>
 
-      <!-- Mobile list -->
+      <!-- Mobile list (hidden on desktop via CSS) -->
       <div class="products-list">
         <div class="product-row">
           <div class="product-thumb">
@@ -200,7 +207,7 @@
             <p class="product-name">Sommer-buket 2026</p>
             <p class="product-price">Fra 349,00 kr.</p>
           </div>
-          <a href="#" class="btn-lime">LÆS MERE</a>
+          <a href="#" class="btn-lime">LÆG I KURV</a>
         </div>
 
         <div class="product-row">
@@ -209,9 +216,9 @@
           </div>
           <div class="product-info">
             <p class="product-name">Begravelses-binderi</p>
-            <p class="product-price">Fra 998,00 kr.</p>
+            <p class="product-price">Fra 999,00 kr.</p>
           </div>
-          <a href="#" class="btn-lime">LÆS MERE</a>
+          <a href="#" class="btn-lime">LÆG I KURV</a>
         </div>
 
         <div class="product-row">
@@ -222,11 +229,11 @@
             <p class="product-name">Bryllupsbuket — Special</p>
             <p class="product-price">Fra 799,00 kr.</p>
           </div>
-          <a href="#" class="btn-lime">LÆS MERE</a>
+          <a href="#" class="btn-lime">LÆG I KURV</a>
         </div>
       </div>
 
-      <!-- Desktop card grid -->
+      <!-- Desktop card grid (hidden on mobile via CSS) -->
       <div class="products-grid">
         <article class="product-card">
           <div class="product-card-photo">
@@ -311,7 +318,7 @@
       </div>
     </section>
 
-    <!-- USP ROW  — three key promises -->
+    <!-- USP ROW  — three key promises-->
     <section class="usp-row" aria-label="Vores løfter">
       <div class="usp-cell">
         <div class="usp-icon">
@@ -361,7 +368,7 @@
           <span class="footer-badge">Interflora-partner · Global levering</span>
         </div>
 
-        <!-- Accordion columns -->
+        <!-- Accordion columns (mobile) / always expanded (desktop) -->
         <div class="footer-col">
           <button class="footer-col-btn">
             <span>Butikken</span>
@@ -411,7 +418,7 @@
         </div>
       </div>
 
-      <!-- Bottom: payment icons (left) + copyright (right) -->
+      <!-- Bottom bar: payment icons (left) + copyright (right) -->
       <div class="footer-bottom">
         <ul class="footer-payment" aria-label="Betalingsmetoder">
           <li><img src="images/img_index/visa_icon.svg" alt="Visa" /></li>
@@ -431,7 +438,7 @@
       <a href="#kategorier">Vis alle buketter →</a>
     </div>
 
-    <!-- JavaScript — at the bottom so the page loads first -->
+    <!-- JavaScript — loaded at the end so the HTML is ready first -->
     <script src="javascript/main.js"></script>
   </body>
 </html>
