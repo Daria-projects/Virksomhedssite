@@ -76,6 +76,14 @@ body {
   gap: 1rem;
 }
 
+.product-card1,
+.product-card2,
+.product-card3,
+.product-card4,
+.product-card5,
+.product-card6,
+.product-card7,
+.product-card8,
 .product-card {
   background: #fff;
 }
