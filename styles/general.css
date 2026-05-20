@@ -18,6 +18,11 @@
   --color-strip-green: rgba(212, 230, 0); /* page background */
 }
 
+/* --- Header --- */
+.nav-logo {
+  padding-left: 140px;
+}
+
 /* --- Reset --- */
 * {
   box-sizing: border-box;
