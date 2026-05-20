@@ -63,11 +63,11 @@ body {
   font-size: 0.85rem;
 }
 
-.toolbar-right {
+/* .toolbar-right {
   width: 140px;
   height: 30px;
   background: #d9d9d9;
-}
+} */
 
 /* PRODUCTS */
 .products {
@@ -201,11 +201,6 @@ body {
   display: block;
 } */
 
-/* Show submenu when button has .open class - using :has() selector
-.nav-links li:has(.foldud_btn.open) .undermenu {
-  display: block;
-} */
-
 /* MOBILE */
 @media (max-width: 768px) {
   body {
@@ -299,10 +294,10 @@ body {
     font-size: 0.7rem;
   }
 
-  .toolbar-right {
+  /* .toolbar-right {
     width: 120px;
     height: 24px;
-  }
+  } */
 
   /* PRODUCTS */
   .products {
