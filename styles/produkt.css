@@ -318,6 +318,17 @@ button {
   transition: 0.3s;
 }
 
+.thumbnail-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.thumbnail-row img {
+  width: calc(25% - 0.75rem);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 .thumbnail-row img.active {
   opacity: 1;
   border: 2px solid rgba(212, 230, 0);
