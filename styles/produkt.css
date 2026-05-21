@@ -246,6 +246,20 @@ main {
   object-fit: cover;
 }
 
+/*fonts*/
+
+.description {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+button {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.note-box {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 /* MOBILE */
 
 @media (max-width: 900px) {

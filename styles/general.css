@@ -2,8 +2,18 @@
    GENERAL.CSS
    Variables · Reset · Shared styles · Buttons
    */
-
 /* --- Colours and font variables --- */
+
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter-VariableFont_opsz\,wght.woff) format("woff");
+}
+
+@font-face {
+  font-family: "spacegrotesk";
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.woff) format("woff");
+}
+
 :root {
   --color-dark: #17353c; /* main dark green */
   --color-teal: #005056; /* darker teal for hover */
