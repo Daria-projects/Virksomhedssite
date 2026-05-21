@@ -191,7 +191,7 @@ body {
 
 /* HELP SECTION */
 .help-section {
-  background: #ddd;
+  background: #ccc;
   text-align: center;
   padding: 4rem 2rem;
 }
@@ -283,6 +283,10 @@ body {
 
 .dropdown.open .submenu {
   display: block;
+} */
+
+/* .help-section {
+  background-image: url("/images/img_index/img_voresudvalg/Mappe/Hero\ Section.webp");
 } */
 
 /* MOBILE */
