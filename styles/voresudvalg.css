@@ -158,11 +158,16 @@ body {
 }
 
 /* PAGINATION */
-.pagination-placeholder {
+.semereknap {
   width: 180px;
   height: 30px;
   background: #d9d9d9;
   margin: 2rem auto 3rem;
+  border-radius: 20px;
+}
+
+.semereknap p {
+  align-items: center;
 }
 
 /* BENEFITS */
