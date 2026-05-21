@@ -244,6 +244,14 @@ body {
   transition: 0.3s;
 }
 
+.products h3 {
+  font-size: 18px;
+}
+
+.products p {
+  font-size: 15px;
+}
+
 /*--- Fold ud menu i nav ---*/
 /* 
 .dropdown {
@@ -433,4 +441,15 @@ body {
   .help-section button {
     width: 220px;
   }
-}
+
+  .products h3 {
+    font-size: 15px;
+  }
+
+  .products p {
+    font-size: 12px;
+  }
+
+  /* .products button {
+  }
+} */
