@@ -157,17 +157,29 @@ body {
   transform: scale(1.05);
 }
 
-/* PAGINATION */
+/* Se mere knap */
+
 .semereknap {
   width: 180px;
   height: 30px;
   background: #d9d9d9;
   margin: 2rem auto 3rem;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
 .semereknap p {
-  align-items: center;
+  margin: 0;
+  font-family: "inter";
+  font-size: 16px;
+}
+.semereknap:hover {
+  background: #c7ef00;
+  transform: scale(1.05);
 }
 
 /* BENEFITS */
@@ -187,6 +199,14 @@ body {
 .benefit p {
   color: #777;
   font-size: 0.8rem;
+}
+
+/* Stack and center each benefit's contents so the image sits under the text */
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* HELP SECTION */
@@ -263,6 +283,13 @@ body {
 
 .benefits p {
   font-family: "inter";
+}
+
+.benefit img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 /*--- Fold ud menu i nav ---*/
