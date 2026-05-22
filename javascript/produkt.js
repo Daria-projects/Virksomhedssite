@@ -1,5 +1,5 @@
 // ARRAY MED BILLEDER
-const images = ["images/img_index/img_voresudvalg/blaa_buket.webp", "images/img_index/img_voresudvalg/blaabuket_giv.webp", "images/img_index/img_voresudvalg/blaabuket_kvinder.webp"];
+const images = ["images/img_index/img_voresudvalg/blaa_buket.webp", "images/img_index/img_voresudvalg/blaabuket_giv.webp", "images/img_index/img_voresudvalg/blaabuket_kvinder.webp", "images/img_index/img_voresudvalg/blaabuket_oppefra.webp"];
 
 // FIND ELEMENTER
 const mainImage = document.querySelector(".main-image");
