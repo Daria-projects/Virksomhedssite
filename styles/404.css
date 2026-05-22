@@ -1,0 +1,227 @@
+/* =============================================
+   404.CSS  —  Option A
+   Dark green background · Lime 404 · Cream text
+   ============================================= */
+
+
+/* -----------------------------------------------
+   PAGE
+----------------------------------------------- */
+.error-page {
+  min-height: 100vh;
+  background-color: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.error-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 56px 24px 64px;
+  gap: 0;
+}
+
+
+/* -----------------------------------------------
+   EYEBROW LABEL
+   Small pill above the number
+----------------------------------------------- */
+.error-eyebrow {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(225, 254, 8, 0.65);
+  margin-bottom: 16px;
+}
+
+
+/* -----------------------------------------------
+   404 NUMBER
+   Lime, solid — no outline, no stroke
+----------------------------------------------- */
+.error-number {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(96px, 22vw, 220px);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  color: var(--color-lime);
+  margin-bottom: 28px;
+}
+
+
+/* -----------------------------------------------
+   HEADING
+   First line cream, second line lime
+----------------------------------------------- */
+.error-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(22px, 5vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* First line — cream */
+.error-heading-line1 {
+  display: block;
+  color: var(--color-cream);
+}
+
+/* Second line — lime, no stroke, just colour */
+.error-heading-line2 {
+  display: block;
+  color: var(--color-lime);
+}
+
+
+/* -----------------------------------------------
+   BODY TEXT
+----------------------------------------------- */
+.error-body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(249, 247, 242, 0.65);
+  max-width: 36ch;
+  margin-bottom: 32px;
+}
+
+
+/* -----------------------------------------------
+   CTA BUTTONS
+----------------------------------------------- */
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Primary — lime pill */
+.error-btn-primary {
+  display: inline-block;
+  background-color: var(--color-lime);
+  color: var(--color-dark);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 24px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.error-btn-primary:hover {
+  opacity: 0.88;
+}
+
+/* Secondary — cream ghost pill */
+.error-btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-cream);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: 1.5px solid rgba(249, 247, 242, 0.35);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.error-btn-secondary:hover {
+  border-color: rgba(249, 247, 242, 0.75);
+  color: var(--color-cream);
+}
+
+
+/* -----------------------------------------------
+   ILLUSTRATION
+   Simple SVG flower, drawn in brand colours
+----------------------------------------------- */
+.error-illo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+
+/* -----------------------------------------------
+   AWARENESS STRIP
+   A single, relevant fact — connects sustainability
+   to the brand without being preachy
+----------------------------------------------- */
+.error-awareness {
+  border-top: 1px solid rgba(249, 247, 242, 0.08);
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.error-awareness-text {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: rgba(249, 247, 242, 0.6);
+  line-height: 1.5;
+}
+
+.error-awareness-text strong {
+  color: rgba(249, 247, 242, 0.9);
+  font-weight: 600;
+}
+
+.error-awareness-link {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-lime);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(225, 254, 8, 0.4);
+  padding-bottom: 1px;
+  white-space: nowrap;
+  transition: border-color 0.15s;
+}
+
+.error-awareness-link:hover {
+  border-color: var(--color-lime);
+}
+
+
+/* -----------------------------------------------
+   DESKTOP (min-width: 768px)
+----------------------------------------------- */
+@media (min-width: 768px) {
+
+  .error-main {
+    padding: 72px 48px 80px;
+  }
+
+  .error-illo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .error-body {
+    font-size: 17px;
+  }
+
+  .error-awareness {
+    padding: 20px 48px;
+    gap: 20px;
+  }
+}
