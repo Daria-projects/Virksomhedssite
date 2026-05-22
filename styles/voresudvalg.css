@@ -191,18 +191,21 @@ body {
 
 /* HELP SECTION */
 .help-section {
-  background: #ccc;
+  background-color: var(--color-cream);
   text-align: center;
   padding: 4rem 2rem;
+  border: 1px solid #ccc;
 }
 
 .help-section h2 {
   margin-bottom: 1rem;
+  font-family: "spacegrotesk";
 }
 
 .help-section p {
   color: #666;
   margin-bottom: 2rem;
+  font-family: "inter";
 }
 
 .help-section button {
@@ -252,6 +255,16 @@ body {
   font-size: 15px;
 }
 
+/*--- Iconer i bunden af siden ---*/
+
+.benefits h4 {
+  font-family: "spacegrotesk";
+}
+
+.benefits p {
+  font-family: "inter";
+}
+
 /*--- Fold ud menu i nav ---*/
 /* 
 .dropdown {
@@ -289,7 +302,8 @@ body {
   background-image: url("/images/img_index/img_voresudvalg/Mappe/Hero\ Section.webp");
 } */
 
-/* MOBILE */
+/* Mobil version */
+
 @media (max-width: 768px) {
   body {
     background: #fff;
