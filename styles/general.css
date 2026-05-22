@@ -33,6 +33,16 @@
   padding-left: 140px;
 }
 
+/* --- Bestil nu knap ---*/
+.nav-cta.btn-lime {
+  transition: all 0.2s ease;
+}
+
+.nav-cta.btn-lime:hover {
+  background: #c7ef00;
+  transform: scale(1.02);
+}
+
 /* --- Reset --- */
 * {
   box-sizing: border-box;
