@@ -2,7 +2,8 @@
 const images = ["images/img_index/img_voresudvalg/blaa_buket.webp", "images/img_index/img_voresudvalg/blaabuket_giv.webp", "images/img_index/img_voresudvalg/blaabuket_kvinder.webp", "images/img_index/img_voresudvalg/blaabuket_oppefra.webp"];
 
 // FIND ELEMENTER
-const mainImage = document.querySelector(".main-image");
+const track = document.querySelector(".slider-track");
+const slides = document.querySelectorAll(".slider-track img");
 const leftArrow = document.querySelector(".arrow.left");
 const rightArrow = document.querySelector(".arrow.right");
 const thumbnails = document.querySelectorAll(".thumbnail-row img");
@@ -12,12 +13,8 @@ let currentImage = 0;
 
 // FUNKTION TIL AT VISE BILLEDE
 function showImage(index) {
-  mainImage.src = images[index];
-
-  // Fjerner active fra alle thumbnails
+  track.style.transform = `translateX(-${index * 100}%)`;
   thumbnails.forEach((img) => img.classList.remove("active"));
-
-  // Tilføjer active til nuværende
   thumbnails[index].classList.add("active");
 }
 
