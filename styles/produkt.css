@@ -181,7 +181,7 @@ main {
 
 /* UNDERDELEN AF SIDEN */
 
-.note-box {
+textarea {
   border: 2px solid #b9ac8d;
   padding: 20px;
   max-width: 500px;
