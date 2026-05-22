@@ -50,3 +50,17 @@ thumbnails.forEach((thumbnail, index) => {
 
 // VIS FØRSTE ACTIVE
 showImage(currentImage);
+
+const sizeButtons = document.querySelectorAll(".size-buttons button");
+
+sizeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Fjern active fra alle
+    sizeButtons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    // Tilføj active til den klikkede
+    button.classList.add("active");
+  });
+});
