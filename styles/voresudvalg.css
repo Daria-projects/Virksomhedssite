@@ -157,17 +157,29 @@ body {
   transform: scale(1.05);
 }
 
-/* PAGINATION */
+/* Se mere knap */
+
 .semereknap {
   width: 180px;
   height: 30px;
   background: #d9d9d9;
   margin: 2rem auto 3rem;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
 .semereknap p {
-  align-items: center;
+  margin: 0;
+  font-family: "inter";
+  font-size: 16px;
+}
+.semereknap:hover {
+  background: #c7ef00;
+  transform: scale(1.05);
 }
 
 /* BENEFITS */
@@ -189,20 +201,31 @@ body {
   font-size: 0.8rem;
 }
 
+/* Stack and center each benefit's contents so the image sits under the text */
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* HELP SECTION */
 .help-section {
-  background: #ddd;
+  background-color: var(--color-cream);
   text-align: center;
   padding: 4rem 2rem;
+  border: 1px solid #ccc;
 }
 
 .help-section h2 {
   margin-bottom: 1rem;
+  font-family: "spacegrotesk";
 }
 
 .help-section p {
   color: #666;
   margin-bottom: 2rem;
+  font-family: "inter";
 }
 
 .help-section button {
@@ -252,6 +275,23 @@ body {
   font-size: 15px;
 }
 
+/*--- Iconer i bunden af siden ---*/
+
+.benefits h4 {
+  font-family: "spacegrotesk";
+}
+
+.benefits p {
+  font-family: "inter";
+}
+
+.benefit img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
 /*--- Fold ud menu i nav ---*/
 /* 
 .dropdown {
@@ -285,7 +325,12 @@ body {
   display: block;
 } */
 
-/* MOBILE */
+/* .help-section {
+  background-image: url("/images/img_index/img_voresudvalg/Mappe/Hero\ Section.webp");
+} */
+
+/* Mobil version */
+
 @media (max-width: 768px) {
   body {
     background: #fff;
