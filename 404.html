@@ -7,122 +7,53 @@
     <meta name="description" content="Siden findes ikke — Frihedens Blomster" />
     <title>404 — Frihedens Blomster</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/404.css" />
   </head>
   <body class="error-page">
+    <!--
+      BACKGROUND IMAGE
+      Positioned absolute, fills viewport, sits beneath all overlays.
+      fetchpriority="high" because it IS the page — load it first.
+    -->
+    <img class="error-bg" src="images/img_index/404.webp" alt="" fetchpriority="high" aria-hidden="true" />
 
+    <!--
+      OVERLAYS
+      Two stacked divs:
+      1. Radial — darkens edges, floats the centre
+      2. Linear — darkens bottom where text sits
+      Together they make any text readable without hiding the image.
+    -->
+    <div class="error-overlay-radial" aria-hidden="true"></div>
+    <div class="error-overlay-linear" aria-hidden="true"></div>
 
-    <!-- MAIN ERROR BLOCK -->
+    <!-- MAIN CONTENT -->
     <main class="error-main">
-
-      <!--
-        Illustration: a wilting flower on a dark background.
-        Colours match the page — lime petals, periwinkle, cream stroke.
-        aria-hidden because it is decorative — the heading carries the meaning.
-      -->
-      <svg
-        class="error-illo"
-        viewBox="0 0 100 110"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <!-- Stem — droops gently to the right -->
-        <path
-          d="M50 8 C50 34 64 44 62 82"
-          stroke="rgba(249,247,242,0.55)"
-          stroke-width="2"
-          stroke-linecap="round"
-        />
-        <!-- Leaf -->
-        <path
-          d="M56 46 C44 38 36 48 48 54"
-          stroke="rgba(249,247,242,0.45)"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          fill="none"
-        />
-        <!-- Petals — periwinkle -->
-        <circle cx="62" cy="68" r="6" fill="#97b9ff" opacity="0.7"/>
-        <circle cx="72" cy="76" r="6" fill="#97b9ff" opacity="0.7"/>
-        <circle cx="72" cy="88" r="6" fill="#97b9ff" opacity="0.7"/>
-        <circle cx="62" cy="95" r="6" fill="#97b9ff" opacity="0.7"/>
-        <circle cx="52" cy="88" r="6" fill="#97b9ff" opacity="0.7"/>
-        <circle cx="52" cy="76" r="6" fill="#97b9ff" opacity="0.7"/>
-        <!-- Centre — lime -->
-        <circle cx="62" cy="82" r="8" fill="#e1fe08"/>
-        <circle cx="62" cy="82" r="3.5" fill="#17353c"/>
-      </svg>
-
-      <!-- Small eyebrow label -->
       <p class="error-eyebrow">Side ikke fundet</p>
 
-      <!-- Giant lime number — solid colour, no stroke -->
       <p class="error-number">404</p>
 
-      <!-- Heading: first line cream, second line lime -->
       <h1 class="error-heading">
         <span class="error-heading-line1">Den blomst</span>
         <span class="error-heading-line2">fandtes ikke.</span>
       </h1>
 
-      <!-- Body text -->
       <p class="error-body">
         Siden du ledte efter er visnet, flyttet eller aldrig plantet.<br />
         Men vores butik er stadig fuld af friske ting.
       </p>
 
-      <!-- Two CTAs -->
       <div class="error-actions">
         <a href="index.html" class="error-btn-primary">← Gå til forsiden</a>
         <a href="kontakt.html" class="error-btn-secondary">Kontakt os</a>
       </div>
-
     </main>
 
-
-    <!--
-      AWARENESS STRIP
-      A single relevant fact about flower sustainability —
-      turns a dead end into a brand moment for the 18-35 audience.
-    -->
-    <aside class="error-awareness" aria-label="Vidste du det?">
-
-      <!-- Info icon — inline SVG, no emoji -->
-      <svg
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        style="flex-shrink: 0;"
-      >
-        <circle cx="8" cy="8" r="6.5" stroke="rgba(225,254,8,0.5)" stroke-width="1"/>
-        <path d="M8 7v4" stroke="rgba(225,254,8,0.7)" stroke-width="1.3" stroke-linecap="round"/>
-        <circle cx="8" cy="5.5" r="0.7" fill="rgba(225,254,8,0.7)"/>
-      </svg>
-
-      <p class="error-awareness-text">
-        <strong>Vidste du?</strong>
-        Over 70% af blomster solgt i Europa er fløjet ind fra tusindvis af km væk.
-        Hos os er blomsterne sæsonens egne.
-      </p>
-
-      <a href="om-os.html" class="error-awareness-link">Læs om vores blomster →</a>
-
-    </aside>
-
-
-    <!-- Password protection — same as all other pages -->
     <script src="javascript/login.js"></script>
-
   </body>
 </html>
