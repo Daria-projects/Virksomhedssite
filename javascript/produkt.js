@@ -52,6 +52,7 @@ thumbnails.forEach((thumbnail, index) => {
 showImage(currentImage);
 
 const sizeButtons = document.querySelectorAll(".size-buttons button");
+const price = document.querySelector(".product-price");
 
 sizeButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -62,5 +63,8 @@ sizeButtons.forEach((button) => {
 
     // Tilføj active til den klikkede
     button.classList.add("active");
+
+    const newPrice = button.dataset.price;
+    price.textContent = `${newPrice} KR.`;
   });
 });
