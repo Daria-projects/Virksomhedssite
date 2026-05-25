@@ -68,3 +68,26 @@ sizeButtons.forEach((button) => {
     price.textContent = `${newPrice} KR.`;
   });
 });
+
+const minusBtn = document.querySelector(".minus");
+const plusBtn = document.querySelector(".plus");
+const quantityNumber = document.querySelector(".quantity-number");
+
+let quantity = 1;
+
+// PLUS
+plusBtn.addEventListener("click", () => {
+  quantity++;
+
+  quantityNumber.textContent = quantity;
+});
+
+// MINUS
+minusBtn.addEventListener("click", () => {
+  // Stopper ved 1
+  if (quantity > 1) {
+    quantity--;
+
+    quantityNumber.textContent = quantity;
+  }
+});
