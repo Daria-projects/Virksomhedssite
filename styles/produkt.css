@@ -296,6 +296,12 @@ button {
   font-family: "Space Grotesk", sans-serif;
 }
 
+/* læg i kurv */
+.add-to-cart.active {
+  background-color: #17353c;
+  color: #fff;
+}
+
 /* MOBILE */
 
 @media (max-width: 900px) {

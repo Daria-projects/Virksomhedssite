@@ -91,3 +91,10 @@ minusBtn.addEventListener("click", () => {
     quantityNumber.textContent = quantity;
   }
 });
+
+// kurv knap
+
+const addToCartBtn = document.querySelector(".add-to-cart");
+addToCartBtn.addEventListener("click", () => {
+  addToCartBtn.classList.toggle("active");
+});
