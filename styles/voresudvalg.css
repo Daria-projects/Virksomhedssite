@@ -240,7 +240,7 @@ body {
   font-family: "inter";
 }
 
-.help-section button {
+.help-section .kontakt-btn {
   background: #d7ff00;
   border: none;
   border-radius: 999px;
@@ -250,7 +250,7 @@ body {
   transition: all 0.2s ease;
 }
 
-.help-section button:hover {
+.kontakt-btn:hover {
   background: #c7ef00;
   transform: scale(1.05);
 }
