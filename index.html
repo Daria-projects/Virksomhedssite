@@ -7,31 +7,25 @@
     <meta name="description" content="Frihedens Blomster — lokal blomsterbutik i Hvidovre. Håndlavede buketter, levering samme dag." />
     <title>Frihedens Blomster</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Stylesheets (order matters — general first, then layout, then page) -->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <!--  NAVIGATIONRow 1: search | LOGO | account + cart + CTA
-         Row 2: page links (desktop only) -->
+    <!-- NAVIGATION -->
     <header>
       <nav class="site-nav">
-        <!-- Row 1 -->
         <div class="nav-row-1">
           <div class="nav-row-1-left">
             <button class="icon-btn" aria-label="Søg">
               <img src="images/img_index/search_icon.svg" alt="" />
             </button>
           </div>
-
           <a href="index.html" class="nav-logo">Frihedens Blomster</a>
-
           <div class="nav-row-1-right">
             <button class="icon-btn" aria-label="Min konto">
               <img src="images/img_index/profile.svg" alt="" />
@@ -40,15 +34,9 @@
               <img src="images/img_index/kurv.svg" alt="" />
             </button>
             <a href="kontakt.html" class="btn-lime nav-cta">Bestil nu →</a>
-            <button class="nav-hamburger" aria-label="Åbn menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+            <button class="nav-hamburger" aria-label="Åbn menu"><span></span><span></span><span></span></button>
           </div>
         </div>
-
-        <!-- Row 2: page links (desktop only) -->
         <div class="nav-row-2">
           <div class="nav-row-2-inner">
             <ul class="nav-links">
@@ -68,7 +56,8 @@
     <div class="mobile-nav">
       <button class="mobile-nav-close" aria-label="Luk menu">&times;</button>
       <ul>
-        <li><a href="index.html">Vores udvalg</a></li>
+        <li><a href="index.html">Forsiden</a></li>
+        <li><a href="vores-udvalg.html">Vores udvalg</a></li>
         <li><a href="galleri.html">Galleri / Inspiration</a></li>
         <li><a href="om-os.html">Om os</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -76,63 +65,49 @@
       <a href="kontakt.html" class="btn-lime mobile-nav-cta-btn">Bestil nu →</a>
     </div>
 
-    <!-- TICKER STRIP  (lime background, scrolling text) -->
+    <!-- TICKER STRIP -->
     <div class="ticker-strip" aria-hidden="true">
       <div class="ticker-inner">
-        <span>Levering samme dag</span>
-        <span class="ticker-dot"> · </span>
-        <span>Bundet for hånd</span>
-        <span class="ticker-dot"> · </span>
-        <span>Fri levering over 500 kr.</span>
-        <span class="ticker-dot"> · </span>
-        <span>Interflora-partner</span>
-        <span class="ticker-dot"> · </span>
-        <span>Aktuelle · Sommer 2026</span>
-        <span class="ticker-dot"> · </span>
-        <!-- Duplicate set for seamless loop -->
-        <span>Levering samme dag</span>
-        <span class="ticker-dot"> · </span>
-        <span>Bundet for hånd</span>
-        <span class="ticker-dot"> · </span>
-        <span>Fri levering over 500 kr.</span>
-        <span class="ticker-dot"> · </span>
-        <span>Interflora-partner</span>
-        <span class="ticker-dot"> · </span>
-        <span>Aktuelle · Sommer 2026</span>
-        <span class="ticker-dot"> · </span>
+        <span>Levering samme dag</span><span class="ticker-dot"> · </span> <span>Håndbundne buketter</span><span class="ticker-dot"> · </span> <span>Fri levering over 500 kr.</span><span class="ticker-dot"> · </span> <span>Interflora-partner</span
+        ><span class="ticker-dot"> · </span> <span>Husk fars dag d. 5 juni</span><span class="ticker-dot"> · </span> <span>Levering samme dag</span><span class="ticker-dot"> · </span> <span>Håndbundne buketter</span
+        ><span class="ticker-dot"> · </span> <span>Fri levering over 500 kr.</span><span class="ticker-dot"> · </span> <span>Interflora-partner</span><span class="ticker-dot"> · </span> <span>Aktuelle · Sommer 2026</span
+        ><span class="ticker-dot"> · </span>
       </div>
     </div>
 
-    <!-- HERO SECTION -->
+    <!-- HERO
+         .hero-film wraps the image so Ken Burns animates
+         only the photo, never the overlay or text.
+         inset: -2% prevents edges from showing during the drift. -->
     <section class="hero">
-      <img class="hero-image" src="images/img_index/Hero Section.webp" alt="Friske peach roser i vand mod lyseblå baggrund" fetchpriority="high" />
+      <div class="hero-film">
+        <img class="hero-image" src="images/img_index/Hero Section.webp" alt="Friske peach roser i vand mod lyseblå baggrund" fetchpriority="high" />
+      </div>
 
       <div class="hero-overlay"></div>
 
+      <p class="hero-badge">✦ Aktuelle · Sommer 2026</p>
+
       <div class="hero-content">
-        <p class="hero-badge">✦ Aktuelle · Sommer 2026</p>
         <p class="hero-eyebrow">Friske blomster · Hvidovre og omegn · Levering samme dag</p>
         <h1 class="hero-heading">
-          Der behøver<br />
-          ikke være<br />
-          en grund.
+          <span class="hero-line hero-line-1">Der behøver</span>
+          <span class="hero-line hero-line-2">ikke være</span>
+          <span class="hero-line hero-line-3">en grund.</span>
         </h1>
-        <a href="#kategorier" class="btn-lime">Ja, send blomster →</a>
+        <a href="#kategorier" class="btn-lime hero-btn">Ja, send blomster →</a>
       </div>
     </section>
 
-    <!-- CATEGORIES  — "Shop efter stemning / kategorier" -->
+    <!-- CATEGORIES -->
     <section class="categories" id="kategorier">
       <div class="section-head">
         <h2>Shop efter stemning / kategorier</h2>
       </div>
-
       <div class="cat-grid">
         <div class="cat-card">
           <div class="cat-card-image">
-            <div class="cat-icon">
-              <img src="images/img_index/cat_buketter.svg" alt="" />
-            </div>
+            <img src="images/img_index/buketter.webp" alt="Håndlavede buketter" loading="lazy" />
           </div>
           <div class="cat-card-body">
             <p class="cat-name">Buketter</p>
@@ -143,9 +118,7 @@
 
         <div class="cat-card">
           <div class="cat-card-image">
-            <div class="cat-icon">
-              <img src="images/img_index/cat_sorg.svg" alt="" />
-            </div>
+            <img src="images/img_index/begravelsesbinderi.webp" alt="Begravelsesbinderi" loading="lazy" />
           </div>
           <div class="cat-card-body">
             <p class="cat-name">Begravelsesbinderi</p>
@@ -156,9 +129,7 @@
 
         <div class="cat-card">
           <div class="cat-card-image">
-            <div class="cat-icon">
-              <img src="images/img_index/cat_gaver.svg" alt="" />
-            </div>
+            <img src="images/img_index/gave.webp" alt="Blomstergaver" loading="lazy" />
           </div>
           <div class="cat-card-body">
             <p class="cat-name">Gaver</p>
@@ -169,9 +140,7 @@
 
         <div class="cat-card">
           <div class="cat-card-image">
-            <div class="cat-icon">
-              <img src="images/img_index/cat_interflora.svg" alt="" />
-            </div>
+            <img src="images/img_index/interflora_photo.webp" alt="Interflora — global levering" loading="lazy" />
           </div>
           <div class="cat-card-body">
             <p class="cat-name">Interflora</p>
@@ -182,15 +151,13 @@
       </div>
     </section>
 
-    <!-- PRODUCTS  — "Populære buketter"
-         Mobile: list rows / Desktop: card grid -->
+    <!-- PRODUCTS — mobile: list / desktop: card grid -->
     <section class="products">
       <div class="section-head">
         <h2>Populære buketter</h2>
         <a href="galleri.html">Se alle buketter →</a>
       </div>
 
-      <!-- Mobile list -->
       <div class="products-list">
         <div class="product-row">
           <div class="product-thumb">
@@ -202,7 +169,6 @@
           </div>
           <a href="#" class="btn-lime">LÆS MERE</a>
         </div>
-
         <div class="product-row">
           <div class="product-thumb">
             <img src="images/img_index/product_begravelse.webp" alt="Begravelses-binderi" loading="lazy" />
@@ -213,7 +179,6 @@
           </div>
           <a href="#" class="btn-lime">LÆS MERE</a>
         </div>
-
         <div class="product-row">
           <div class="product-thumb">
             <img src="images/img_index/product_bryllup.webp" alt="Bryllupsbuket Special" loading="lazy" />
@@ -226,7 +191,6 @@
         </div>
       </div>
 
-      <!-- Desktop card grid -->
       <div class="products-grid">
         <article class="product-card">
           <div class="product-card-photo">
@@ -240,7 +204,6 @@
             <a href="#" class="product-card-btn">LÆG I KURV</a>
           </div>
         </article>
-
         <article class="product-card">
           <div class="product-card-photo">
             <img src="images/img_index/product_begravelse.webp" alt="Begravelses-binderi" loading="lazy" />
@@ -253,7 +216,6 @@
             <a href="#" class="product-card-btn">LÆG I KURV</a>
           </div>
         </article>
-
         <article class="product-card">
           <div class="product-card-photo">
             <img src="images/img_index/product_bryllup.webp" alt="Bryllupsbuket Special" loading="lazy" />
@@ -272,67 +234,74 @@
     <!-- ILLUSTRATION BLOCK -->
     <section class="illo-block">
       <div class="illo-image">
-        <img src="images/img_index/illustration.svg" alt="Illustration af blomster" />
+        <img src="images/img_index/poser_med_blomster.webp" alt="Blomster i blå og limegrøn taske mod lyseblå baggrund" loading="lazy" />
       </div>
-
       <div class="illo-text">
-        <p class="illo-eyebrow">Leveret til dig</p>
-        <h2 class="illo-heading">Vokset ude.<br />Bundet her.</h2>
-        <p>Blomster ændrer noget. Vi ved ikke helt hvad. Men vi binder dem alligevel — til dig, i Hvidovre og omegn.</p>
-        <a href="kontakt.html" class="btn-dark">Find din buket →</a>
+        <div class="illo-cell illo-cell--heading">
+          <h2 class="illo-heading">
+            Vokset ude.<br />
+            Bundet her.<br />
+            Leveret til dig.
+          </h2>
+        </div>
+        <div class="illo-cell illo-cell--sub">
+          <p class="illo-subheading">Blomster ændrer noget. Vi ved ikke helt hvad. Men vi binder dem alligevel.</p>
+        </div>
+        <div class="illo-cell illo-cell--body">
+          <p class="illo-body">Frihedens Blomster er ikke en kæde. Vi er en rigtig butik på Hvidovre Strandvej — med rigtige mennesker, rigtige årstider og rigtige blomster bundet for hånd.</p>
+          <a href="kontakt.html" class="btn-dark">Find din buket →</a>
+        </div>
       </div>
     </section>
 
-    <!-- GALLERY PREVIEW -->
+    <!-- GALLERY PREVIEW
+         Mobile: 2-col equal squares
+         Desktop: asymmetric masonry (tall · wide · two squares) -->
     <section class="gallery-home">
       <div class="section-head">
         <h2>Galleri</h2>
+        <a href="galleri.html">Se alle billeder →</a>
       </div>
 
       <div class="gallery-grid">
+        <!-- Cell 1: portrait (tall on desktop, spans both rows) -->
         <div class="gallery-cell">
-          <img src="images/img_index/gallery_1.webp" alt="Håndlavet buket" loading="lazy" />
-          <span class="gallery-label">Søgnings</span>
+          <img src="images/img_index/personen_med_blomster.webp" alt="Person løfter en frodig buket mod lyseblå himmel" loading="lazy" />
+          <div class="gallery-label"><span>Årets buket</span></div>
         </div>
 
+        <!-- Cell 2: landscape (wide on desktop, top-right) -->
         <div class="gallery-cell">
-          <img src="images/img_index/gallery_2.webp" alt="Blomsterløg" loading="lazy" />
-          <span class="gallery-label">Bestilling</span>
+          <img src="images/img_index/bukket med blomster.webp" alt="Buket med blomster" loading="lazy" />
+          <div class="gallery-label"><span>Bare til dig</span></div>
         </div>
 
+        <!-- Cell 3: square (bottom-right on desktop) -->
         <div class="gallery-cell">
-          <img src="images/img_index/gallery_3.webp" alt="Blomster i tasker" loading="lazy" />
-          <span class="gallery-label">Kigaltid</span>
+          <img src="images/img_index/blomsterbinder_med_blomster.webp" alt="Florist binder blomster for hånd" loading="lazy" />
+          <div class="gallery-label"><span>Bundet for hånd</span></div>
         </div>
       </div>
 
       <div class="gallery-cta">
-        <a href="galleri.html" class="btn-lime">Se alle billeder →</a>
+        <a href="404.html" class="btn-lime">Se alle billeder →</a>
       </div>
     </section>
 
-    <!-- USP ROW  — three key promises -->
+    <!-- USP ROW -->
     <section class="usp-row" aria-label="Vores løfter">
       <div class="usp-cell">
-        <div class="usp-icon">
-          <img src="images/img_index/usp_dag.svg" alt="" />
-        </div>
+        <div class="usp-icon"><img src="images/img_index/samme_dag_icon.svg" alt="" /></div>
         <p class="usp-label">Samme dag</p>
         <p class="usp-sublabel">Bestil inden kl. 12</p>
       </div>
-
       <div class="usp-cell">
-        <div class="usp-icon">
-          <img src="images/img_index/usp_fragt.svg" alt="" />
-        </div>
+        <div class="usp-icon"><img src="images/img_index/fri_fragt_icon.svg" alt="" /></div>
         <p class="usp-label">Fri fragt</p>
         <p class="usp-sublabel">Over 400 kr.</p>
       </div>
-
       <div class="usp-cell">
-        <div class="usp-icon">
-          <img src="images/img_index/usp_interflora.svg" alt="" />
-        </div>
+        <div class="usp-icon"><img src="images/img_index/globe_icon.svg" alt="" /></div>
         <p class="usp-label">Interflora</p>
         <p class="usp-sublabel">Autoriseret partner</p>
       </div>
@@ -341,32 +310,19 @@
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="footer-grid">
-        <!-- Brand -->
         <div class="footer-brand">
           <p class="footer-logo">Frihedens Blomster</p>
           <p class="footer-tagline">Lokal blomsterbutik siden 1987. Faglærte hænder, friske blomster og levering, der faktisk virker.</p>
-
           <div class="footer-social">
-            <a href="#" aria-label="Instagram">
-              <img src="images/img_index/instagram_icon.svg" alt="Instagram" />
-            </a>
-            <a href="#" aria-label="Facebook">
-              <img src="images/img_index/fb_icon.svg" alt="Facebook" />
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <img src="images/img_index/linkedin_icon.svg" alt="LinkedIn" />
-            </a>
+            <a href="#" aria-label="Instagram"><img src="images/img_index/instagram_icon.svg" alt="Instagram" /></a>
+            <a href="#" aria-label="Facebook"><img src="images/img_index/fb_icon.svg" alt="Facebook" /></a>
+            <a href="#" aria-label="LinkedIn"><img src="images/img_index/linkedin_icon.svg" alt="LinkedIn" /></a>
           </div>
-
           <span class="footer-badge">Interflora-partner · Global levering</span>
         </div>
 
-        <!-- Accordion columns -->
         <div class="footer-col">
-          <button class="footer-col-btn">
-            <span>Butikken</span>
-            <span class="arrow">+</span>
-          </button>
+          <button class="footer-col-btn"><span>Butikken</span><span class="arrow">+</span></button>
           <div class="footer-col-links">
             <ul>
               <li><a href="#">Buketter</a></li>
@@ -379,10 +335,7 @@
         </div>
 
         <div class="footer-col">
-          <button class="footer-col-btn">
-            <span>Information</span>
-            <span class="arrow">+</span>
-          </button>
+          <button class="footer-col-btn"><span>Information</span><span class="arrow">+</span></button>
           <div class="footer-col-links">
             <ul>
               <li><a href="om-os.html">Om os</a></li>
@@ -395,10 +348,7 @@
         </div>
 
         <div class="footer-col">
-          <button class="footer-col-btn">
-            <span>Kontakt</span>
-            <span class="arrow">+</span>
-          </button>
+          <button class="footer-col-btn"><span>Kontakt</span><span class="arrow">+</span></button>
           <div class="footer-col-links">
             <ul>
               <li><a href="tel:+4536751234">36 75 12 34</a></li>
@@ -411,7 +361,6 @@
         </div>
       </div>
 
-      <!-- Bottom: payment icons (left) + copyright (right) -->
       <div class="footer-bottom">
         <ul class="footer-payment" aria-label="Betalingsmetoder">
           <li><img src="images/img_index/visa_icon.svg" alt="Visa" /></li>
@@ -421,17 +370,15 @@
           <li><img src="images/img_index/applepay_icon.svg" alt="Apple Pay" /></li>
           <li><img src="images/img_index/googlepay_icon.svg" alt="Google Pay" /></li>
         </ul>
-
         <p class="footer-copyright">© 2026 Frihedens Blomster</p>
       </div>
     </footer>
 
-    <!-- STICKY MOBILE CTA  (hidden on desktop) -->
+    <!-- STICKY MOBILE CTA -->
     <div class="sticky-cta">
       <a href="#kategorier">Vis alle buketter →</a>
     </div>
 
-    <!-- JavaScript — at the bottom so the page loads first -->
     <script src="javascript/main.js"></script>
   </body>
 </html>

@@ -1,11 +1,15 @@
-/* HERO SECTION */
+/* INDEX.CSS */
+
+/* 
+   HERO SECTION
+ */
 .hero {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3; /* square-ish on mobile */
+  aspect-ratio: 4 / 3;
   min-height: 300px;
   overflow: hidden;
-  background-color: #7fa8b0; /* fallback colour while image loads */
+  background-color: #7fa8b0;
 }
 
 .hero-image {
@@ -18,7 +22,6 @@
   object-position: center;
 }
 
-/* Dark gradient so text is always readable */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -28,7 +31,29 @@
   background: linear-gradient(to top right, rgba(10, 30, 34, 0.7) 0%, rgba(10, 30, 34, 0.2) 50%, transparent 70%);
 }
 
-/* Text sits at the bottom-left */
+/* Season badge — anchored to the top-left of .hero
+   Works because .hero has position: relative
+   and .hero-badge is a direct child of .hero */
+.hero-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-lime);
+  border: 1px solid var(--color-lime);
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+/* Eyebrow, heading and CTA — anchored to the bottom-left */
 .hero-content {
   position: absolute;
   bottom: 24px;
@@ -57,40 +82,20 @@
   margin-bottom: 24px;
 }
 
-/* Season badge — small outlined pill in the hero */
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: "Inter", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(249, 247, 242, 0.75);
-  border: 1px solid rgba(249, 247, 242, 0.3);
-  padding: 5px 12px;
-  border-radius: 4px;
-  margin-bottom: 14px;
-}
-
-/* -----------------------------------------------
+/* 
    CATEGORIES SECTION
-   "Shop efter stemning / kategorier"
    Card = top image area (icon centred) + bottom text area
------------------------------------------------ */
+ */
 .categories {
   padding: 36px 16px 0;
 }
 
-/* 2 columns on mobile */
 .cat-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
 
-/* Card wrapper — border, rounded, column layout */
 .cat-card {
   background-color: var(--color-cream);
   border: 1px solid var(--color-border);
@@ -100,17 +105,15 @@
   flex-direction: column;
 }
 
-/* Top area — cream background, icon centred */
 .cat-card-image {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 32px 16px;
   background-color: var(--color-cream);
-  flex: 1; /* expands so all cards have equal image areas */
+  flex: 1;
 }
 
-/* The icon circle — pale blue background, dark icon inside, centred */
 .cat-icon {
   width: 72px;
   height: 72px;
@@ -126,7 +129,6 @@
   height: 32px;
 }
 
-/* Bottom text area — separator line on top, left-aligned content */
 .cat-card-body {
   padding: 14px 16px 16px;
   border-top: 1px solid var(--color-border);
@@ -150,7 +152,6 @@
   margin-bottom: 6px;
 }
 
-/* "Se udvalget →" — lime pill, full width */
 .cat-btn {
   display: block;
   background-color: var(--color-lime);
@@ -170,13 +171,12 @@
 
 /* -----------------------------------------------
    PRODUCTS SECTION
-   "Populære buketter"
 ----------------------------------------------- */
 .products {
   padding: 40px 16px 0;
 }
 
-/* --- Mobile: simple list rows --- */
+/* Mobile: list rows */
 .products-list {
   border-top: 1px solid var(--color-border);
 }
@@ -190,13 +190,13 @@
 }
 
 .product-thumb {
+  position: relative;
   width: 72px;
   height: 72px;
   border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
   background-color: var(--color-blue-pale);
-  position: relative;
 }
 
 .product-thumb img {
@@ -233,7 +233,7 @@
   flex-shrink: 0;
 }
 
-/* --- Desktop: card grid (hidden on mobile) --- */
+/* Desktop: card grid (hidden on mobile) */
 .products-grid {
   display: none;
   grid-template-columns: repeat(3, 1fr);
@@ -268,7 +268,6 @@
   transform: scale(1.04);
 }
 
-/* Heart/wishlist button on photo */
 .product-wish {
   position: absolute;
   top: 10px;
@@ -311,11 +310,9 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   font-weight: 700;
-
   color: var(--color-text);
 }
 
-/* Full-width lime button at bottom of card */
 .product-card-btn {
   display: block;
   background-color: var(--color-lime);
@@ -338,7 +335,6 @@
 
 /* -----------------------------------------------
    ILLUSTRATION BLOCK
-   Small illustration on the left, text on the right
 ----------------------------------------------- */
 .illo-block {
   display: flex;
@@ -349,7 +345,6 @@
   overflow: hidden;
 }
 
-/* Illustration side */
 .illo-image {
   display: flex;
   align-items: center;
@@ -363,7 +358,6 @@
   width: 100%;
 }
 
-/* Text side */
 .illo-text {
   padding: 24px 24px 32px;
   border-top: 1px solid var(--color-border);
@@ -404,7 +398,6 @@
   padding: 40px 16px 0;
 }
 
-/* 1 column on mobile */
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -433,7 +426,6 @@
   transform: scale(1.04);
 }
 
-/* Label badge in the corner */
 .gallery-label {
   position: absolute;
   bottom: 12px;
@@ -449,7 +441,6 @@
   border-radius: 4px;
 }
 
-/* Centred button below gallery */
 .gallery-cta {
   text-align: center;
   padding: 24px 0 0;
@@ -457,7 +448,6 @@
 
 /* -----------------------------------------------
    USP ROW
-   Three icons with labels
 ----------------------------------------------- */
 .usp-row {
   display: flex;
@@ -509,7 +499,7 @@
 }
 
 /* -----------------------------------------------
-   DESKTOP STYLES  (min-width: 768px)
+   DESKTOP STYLES (min-width: 768px)
 ----------------------------------------------- */
 @media (min-width: 768px) {
   /* Hero */
@@ -518,13 +508,13 @@
     min-height: 400px;
   }
 
-  .hero-content {
-    bottom: 48px;
+  .hero-badge {
+    top: 28px;
     left: 40px;
   }
 
-  .hero-breadcrumb {
-    top: 20px;
+  .hero-content {
+    bottom: 48px;
     left: 40px;
   }
 
@@ -544,11 +534,11 @@
   }
 
   .products-list {
-    display: none; /* hide list on desktop */
+    display: none;
   }
 
   .products-grid {
-    display: grid; /* show card grid on desktop */
+    display: grid;
   }
 
   /* Illo block */
