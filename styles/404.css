@@ -1,28 +1,3 @@
-/*
-   404.CSS
-   Full-bleed image background
-
-   BUGS FIXED:
-   1. Line 101: color: var(--color-strip-green)  ← undefined variable + missing ;
-      → replaced with rgba(225, 254, 8, 0.70)
-   2. Line 148: color: var(--color-cream)  ← missing ; broke max-width + margin
-      → added semicolon, changed to #ffffff for stronger contrast
-   3. Line 194: border-color: var(--color-blue-pale)  ← missing ;
-      → added semicolon
-
-   CONTRAST FIXES (WCAG AA):
-   ─ Eyebrow:   lime 70% on dark overlay  ≈ 8:1  ✓
-   ─ 404:       #e1fe08 lime + text-shadow ≈ 11:1 ✓
-   ─ Heading:   #ffffff white + text-shadow ≈ 15:1 ✓  (was cream ~9:1, now stronger)
-   ─ Heading 2: #e1fe08 lime + text-shadow ≈ 11:1 ✓
-   ─ Body text: #ffffff white + text-shadow ≈ 15:1 ✓  (was broken, now fixed)
-   ─ Ghost btn: white border + white text         ✓
-
-   OVERLAY FIX:
-   Radial now darkens the CENTER (where plant + text are),
-   not the edges. Inverted from original.
-*/
-
 /* ── PAGE ── */
 .error-page {
   min-height: 100vh;
