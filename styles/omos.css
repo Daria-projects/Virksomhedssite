@@ -20,7 +20,7 @@ h2 {
   font-family: "Space Grotesk", sans-serif;
   margin-left: 95px;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 22px;
 }
 
 .eyebrow {
@@ -34,7 +34,7 @@ h2 {
 
 p {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: #546e74;
   margin-left: 95px;
@@ -225,7 +225,7 @@ p {
 
 .usp-sublabel {
   font-family: "Inter", sans-serif;
-  font-size: 11px;
+  font-size: 14 px;
   color: var(--color-text-muted);
   margin-top: -4px;
 }
