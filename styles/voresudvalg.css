@@ -41,6 +41,14 @@ body {
   padding: 2rem;
 }
 
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
 /* INTRO */
 .eyebrow {
   font-size: 0.7rem;
@@ -49,10 +57,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.intro h1 {
+/* .intro h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-}
+} */
 
 .intro-text {
   max-width: 500px;
