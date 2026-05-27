@@ -431,10 +431,6 @@
   border-top: 1px solid rgba(205, 218, 255, 0.15);
 }
 
-/*
-  Copyright: secondary text, intentionally muted.
-  50% opacity = ~3.4:1 contrast — acceptable for non-essential legal text.
-*/
 .footer-copyright {
   font-family: "Inter", sans-serif;
   font-size: 12px;
