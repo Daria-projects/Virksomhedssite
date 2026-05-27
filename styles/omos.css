@@ -50,6 +50,21 @@ p {
   display: flex;
 }
 
+.omos h1 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.omos p {
+  max-width: 500px;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
 /* .billede_omos {
 } */
 
