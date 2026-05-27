@@ -21,7 +21,7 @@
     <!-- Stylesheets (order matters — general first, then layout, then page) -->
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/layout.css" />
-    <link rel="stylesheet" href="styles/omos.css" />
+    <link rel="stylesheet" href="styles/kurv.css" />
   </head>
   <body>
     <!--  NAVIGATIONRow 1: search | LOGO | account + cart + CTA
@@ -115,112 +115,71 @@
       </div>
     </div>
 
-    <section class="omos">
-      <p class="eyebrow">Forside / Om os</p>
-      <h1>OM FRIHEDENS BLOMSTER</h1>
-      <p>
-        Vi skaber smukke blomsteroplevelser med passion, kvalitet og omtanke.
-      </p>
-    </section>
+    <main class="cart-container">
+      <h1 class="cart-title">Din kurv</h1>
 
-    <section class="billede_omos">
-      <!-- ikke offieciele billede -->
-      <img
-        class="omos-image"
-        src="images/img_index/img_omos/omOsBillede.webp"
-        alt="Friske peach roser i vand mod lyseblå baggrund"
-        fetchpriority="high"
-      />
-    </section>
+      <div class="cart-layout">
+        <section class="cart-items">
+          <div class="cart-item">
+            <div class="item-image">
+              <div
+                class="placeholder-img"
+                style="background-color: #e2e8f0"
+              ></div>
+            </div>
+            <div class="item-details">
+              <h2>Sommerbuket 2026</h2>
+              <p class="item-meta">Håndbundet • Frihedens blomster</p>
+              <span class="item-price">Fra 349,00 kr.</span>
+            </div>
+            <div class="item-quantity">
+              <label for="qty-1">Antal:</label>
+              <input type="number" id="qty-1" value="1" min="1" disabled />
+            </div>
+            <button class="remove-btn" title="Fjern vare">×</button>
+          </div>
 
-    <section class="vores-historie">
-      <h2>VORES HISTORIE</h2>
-      <div class="vores-historie-div">
-        <p class="vores-historie-venstre">
-          Frihedens Blomster er en passioneret blomsterbutik med kærlighed til
-          håndværket. Vi tror på, at blomster kan sætte ord på følelser og skabe
-          minder, der varer. Siden 1987 har vi betjent Hvidovre og omegn.
-        </p>
-        <p class="vores-historie-højre">
-          Vi er ikke en kæde — vi er en rigtig butik med rigtige mennesker,
-          rigtige årstider og rigtige blomster bundet for hånd. Vi spørger ikke
-          om anledningen. Vi ved bare, at det betyder noget.
-        </p>
+          <div class="cart-item">
+            <div class="item-image">
+              <div
+                class="placeholder-img"
+                style="background-color: #cbd5e1"
+              ></div>
+            </div>
+            <div class="item-details">
+              <h2>Bryllupsbuket – Special</h2>
+              <p class="item-meta">Håndbundet • Interflora blomster</p>
+              <span class="item-price">Fra 799,00 kr.</span>
+            </div>
+            <div class="item-quantity">
+              <label for="qty-2">Antal:</label>
+              <input type="number" id="qty-2" value="1" min="1" disabled />
+            </div>
+            <button class="remove-btn" title="Fjern vare">×</button>
+          </div>
+        </section>
+
+        <aside class="cart-summary">
+          <h2>Oversigt</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>1.148,00 kr.</span>
+          </div>
+          <div class="summary-row">
+            <span>Levering</span>
+            <span class="free-shipping">Fri fragt (Over 400 kr.)</span>
+          </div>
+          <hr class="summary-divider" />
+          <div class="summary-row total-row">
+            <span>Total (inkl. moms)</span>
+            <span>1.148,00 kr.</span>
+          </div>
+
+          <button class="btn-checkout">Gå til betaling →</button>
+          <a href="#" class="continue-shopping">← Fortsæt indkøb</a>
+        </aside>
       </div>
-    </section>
-
-    <section class="vores-værdier">
-      <h2>VORES VÆRDIER</h2>
-
-      <div class="vores-værdier-div">
-        <div class="vores-værdier-venstre">
-          <div class="vores-værdier-img">
-            <img src="images/img_index/usp_dag.svg" alt="" />
-          </div>
-          <p class="vores-værdier-overskrift">KVALITET</p>
-          <p class="vores-værdier-txt">
-            Vi vælger kun de bedste blomster og leverer altid med omhu og
-            kærlighed.
-          </p>
-        </div>
-
-        <div class="vores-værdier-centrum">
-          <div class="vores-værdier-img">
-            <img src="images/img_index/usp_dag.svg" alt="" />
-          </div>
-          <p class="vores-værdier-overskrift">BÆREDYGTIGHED</p>
-          <p class="vores-værdier-txt">
-            Vi arbejder med bæredygtige principper og ansvarlige leverandører.
-          </p>
-        </div>
-
-        <div class="vores-værdier-højre">
-          <div class="vores-værdier-img">
-            <img src="images/img_index/usp_dag.svg" alt="" />
-          </div>
-          <p class="vores-værdier-overskrift">PASSION</p>
-          <p class="vores-værdier-txt">
-            Blomster er vores håndværk og vores hjerteblod — hver eneste dag.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mod-teamet">
-      <h2>MØD TEAMET</h2>
-
-      <div class="team-div">
-        <div class="team-venstre">
-          <div class="vores-værdier-img">
-            <img src="images/img_index/usp_dag.svg" alt="" />
-          </div>
-          <p class="team-overskrift">NAVN</p>
-          <p class="team-txt">Titel</p>
-        </div>
-
-        <div class="team-centrum">
-          <div class="vores-værdier-img">
-            <img src="images/img_index/usp_dag.svg" alt="" />
-          </div>
-          <p class="team-overskrift">NAVN</p>
-          <p class="team-txt">Titel</p>
-        </div>
-
-        <div class="team-højre">
-          <div class="vores-værdier-img">
-            <img src="images/img_index/usp_dag.svg" alt="" />
-          </div>
-          <p class="team-overskrift">NAVN</p>
-          <p class="team-txt">Titel</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="btn-wrapper">
-      <a class="galleri-btn" href="galleri.html" target="_blank"
-        >SE GALLERI & INSPIRATION -></a
-      >
-    </div>
+    </main>
 
     <!-- USP ROW  — three key promises -->
     <section class="usp-row" aria-label="Vores løfter">
